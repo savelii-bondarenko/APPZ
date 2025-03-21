@@ -1,0 +1,15 @@
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\bin\Debug\net9.0\Lab1_3.exe
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\bin\Debug\net9.0\Lab1_3.deps.json
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\bin\Debug\net9.0\Lab1_3.runtimeconfig.json
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\bin\Debug\net9.0\Lab1_3.dll
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\bin\Debug\net9.0\Lab1_3.pdb
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\Lab1_3.GeneratedMSBuildEditorConfig.editorconfig
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\Lab1_3.AssemblyInfoInputs.cache
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\Lab1_3.AssemblyInfo.cs
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\Lab1_3.csproj.CoreCompileInputs.cache
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\Lab1_3.sourcelink.json
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\Lab1_3.dll
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\refint\Lab1_3.dll
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\Lab1_3.pdb
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\Lab1_3.genruntimeconfig.cache
+F:\Learning\c#\APPZ\Lab1_3\Lab1_3\obj\Debug\net9.0\ref\Lab1_3.dll
