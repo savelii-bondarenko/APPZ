@@ -1,29 +1,28 @@
-﻿using lab1_appz.Services;
+﻿using System.Text;
+using Lab1_3.Services;
 
-namespace lab1_appz
+namespace Lab1_3;
+
+internal class Program
 {
-    internal class Program
+    private static void Main(string[] args)
     {
-        private static void Main(string[] args)
+        Console.OutputEncoding = Encoding.UTF8;
+
+        Console.WriteLine("Симулятор");
+
+        var gamesJsonPath = "games.json";
+
+        try
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-            
-            Console.WriteLine("Симулятор");
-            
-            string gamesJsonPath = "games.json";
-            
-            try
-            {
-                GameSimulator simulator = new GameSimulator(gamesJsonPath);
-                simulator.Run();
-            }
-            catch (Exception ex)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Критична помилка: {ex.Message}");
-                Console.ResetColor();
-            }
-            
+            var simulator = new GameSimulator(gamesJsonPath);
+            simulator.Run();
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Критична помилка: {ex.Message}");
+            Console.ResetColor();
         }
     }
 }
