@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Learning\\c#\\APPZ\\lab1_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F437582E-59C6-45A5-B2B9-F1E66D83C92E}|lab1_appz\\lab1_appz.csproj|f:\\learning\\c#\\appz\\lab1_1\\lab1_appz\\services\\eventsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437582E-59C6-45A5-B2B9-F1E66D83C92E}|lab1_appz\\lab1_appz.csproj|solutionrelative:lab1_appz\\services\\eventsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F437582E-59C6-45A5-B2B9-F1E66D83C92E}|lab1_appz\\lab1_appz.csproj|f:\\learning\\c#\\appz\\lab1_1\\lab1_appz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F437582E-59C6-45A5-B2B9-F1E66D83C92E}|lab1_appz\\lab1_appz.csproj|solutionrelative:lab1_appz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventSystem.cs",
+              "DocumentMoniker": "F:\\Learning\\c#\\APPZ\\lab1_1\\lab1_appz\\Services\\EventSystem.cs",
+              "RelativeDocumentMoniker": "lab1_appz\\Services\\EventSystem.cs",
+              "ToolTip": "F:\\Learning\\c#\\APPZ\\lab1_1\\lab1_appz\\Services\\EventSystem.cs",
+              "RelativeToolTip": "lab1_appz\\Services\\EventSystem.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:56:47.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Learning\\c#\\APPZ\\lab1_1\\lab1_appz\\Program.cs",
+              "RelativeDocumentMoniker": "lab1_appz\\Program.cs",
+              "ToolTip": "F:\\Learning\\c#\\APPZ\\lab1_1\\lab1_appz\\Program.cs",
+              "RelativeToolTip": "lab1_appz\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA4wAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T13:52:55.912Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

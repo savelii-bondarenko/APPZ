@@ -1,0 +1,101 @@
+[
+  {
+    "Name": "Farming Simulator 2023",
+    "Genre": 0,
+    "Requirements": {
+      "MinProcessorGHz": 2.5,
+      "MinRamGB": 4,
+      "MinVideoRamGB": 2,
+      "MinHddGB": 10
+    },
+    "IsOnline": false
+  },
+  {
+    "Name": "Counter-Strike 2",
+    "Genre": 1,
+    "Requirements": {
+      "MinProcessorGHz": 3,
+      "MinRamGB": 8,
+      "MinVideoRamGB": 4,
+      "MinHddGB": 50
+    },
+    "IsOnline": true
+  },
+  {
+    "Name": "World of Warcraft",
+    "Genre": 2,
+    "Requirements": {
+      "MinProcessorGHz": 2.8,
+      "MinRamGB": 6,
+      "MinVideoRamGB": 3,
+      "MinHddGB": 100
+    },
+    "IsOnline": true
+  },
+  {
+    "Name": "Flight Simulator",
+    "Genre": 0,
+    "Requirements": {
+      "MinProcessorGHz": 3.5,
+      "MinRamGB": 16,
+      "MinVideoRamGB": 8,
+      "MinHddGB": 150
+    },
+    "IsOnline": false
+  },
+  {
+    "Name": "Battlefield 2042",
+    "Genre": 1,
+    "Requirements": {
+      "MinProcessorGHz": 3.2,
+      "MinRamGB": 12,
+      "MinVideoRamGB": 6,
+      "MinHddGB": 100
+    },
+    "IsOnline": true
+  },
+  {
+    "Name": "The Witcher 3",
+    "Genre": 3,
+    "Requirements": {
+      "MinProcessorGHz": 3,
+      "MinRamGB": 8,
+      "MinVideoRamGB": 4,
+      "MinHddGB": 50
+    },
+    "IsOnline": false
+  },
+  {
+    "Name": "FIFA 2023",
+    "Genre": 5,
+    "Requirements": {
+      "MinProcessorGHz": 2.8,
+      "MinRamGB": 8,
+      "MinVideoRamGB": 3,
+      "MinHddGB": 40
+    },
+    "IsOnline": true
+  },
+  {
+    "Name": "Civilization VI",
+    "Genre": 4,
+    "Requirements": {
+      "MinProcessorGHz": 2.5,
+      "MinRamGB": 6,
+      "MinVideoRamGB": 2,
+      "MinHddGB": 20
+    },
+    "IsOnline": false
+  },
+  {
+    "Name": "\u0413\u0430\u0433\u0430",
+    "Genre": 3,
+    "Requirements": {
+      "MinProcessorGHz": 4,
+      "MinRamGB": 64,
+      "MinVideoRamGB": 14,
+      "MinHddGB": 56
+    },
+    "IsOnline": false
+  }
+]

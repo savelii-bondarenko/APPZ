@@ -2,23 +2,23 @@
 
 public class SamsungFactory : PhoneFactory
 {
-    string model;
-    string color;
-    string os;
-    string processor;
-    int ram;
+    private readonly string _model;
+    private readonly string _color;
+    private readonly string _os;
+    private readonly string _processor;
+    private readonly int _ram;
 
     public SamsungFactory(string model, string color, string os, string processor, int ram)
     {
-        this.model = model;
-        this.color = color;
-        this.os = os;
-        this.processor = processor;
-        this.ram = ram;
+        _model = model;
+        _color = color;
+        _os = os;
+        _processor = processor;
+        _ram = ram;
     }
 
     public override ISmartphone CreatePhone()
     {
-        return new Samsung(model, color, os, processor, ram);
+        return new Samsung(_model, _color, _os, _processor, _ram);
     }
 }
