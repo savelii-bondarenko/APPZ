@@ -38,7 +38,7 @@ public class GameSimulator
     public Device? CurrentDevice { get; private set; }
     public ValidationService ValidationService { get; }
 
-    public Account? CurrentAccount => _accountService.CurrentAccount;
+    private Account? CurrentAccount => _accountService.CurrentAccount;
 
     public void Run()
     {

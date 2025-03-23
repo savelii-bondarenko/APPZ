@@ -86,5 +86,16 @@
       "MinHddGB": 20
     },
     "IsOnline": false
+  },
+  {
+    "Name": "dsa",
+    "Genre": 0,
+    "Requirements": {
+      "MinProcessorGHz": 4,
+      "MinRamGB": 4,
+      "MinVideoRamGB": 4,
+      "MinHddGB": 4
+    },
+    "IsOnline": true
   }
 ]

@@ -3,20 +3,12 @@ using Lab1_3.Models;
 
 namespace Lab1_3.Services;
 
-public class EventData
+public class EventData(EventType type, string message, object? sender = null, object? data = null)
 {
-    public EventData(EventType type, string message, object? sender = null, object? data = null)
-    {
-        Type = type;
-        Message = message;
-        Sender = sender;
-        Data = data;
-    }
-
-    public EventType Type { get; set; }
-    public string Message { get; set; }
-    public object? Sender { get; set; }
-    public object? Data { get; set; }
+    public EventType Type { get; set; } = type;
+    public string Message { get; set; } = message;
+    public object? Sender { get; set; } = sender;
+    public object? Data { get; set; } = data;
 }
 
 public delegate void EventHandler(object sender, EventData eventData);
@@ -25,9 +17,9 @@ public class EventSystem
 {
     private static EventSystem? _instance;
 
-    private readonly Dictionary<EventType, List<EventHandler>> _subscribers = new();
+    private Dictionary<EventType, List<EventHandler>> _subscribers = new();
 
-    public EventSystem()
+    private EventSystem()
     {
         foreach (EventType eventType in Enum.GetValues(typeof(EventType)))
             _subscribers[eventType] = new List<EventHandler>();
@@ -37,17 +29,16 @@ public class EventSystem
     {
         get
         {
-            if (_instance == null) _instance = new EventSystem();
-            return _instance;
+            return _instance ??= new EventSystem();
         }
     }
 
-    public void Subscribe(EventType eventType, EventHandler handler)
+    private void Subscribe(EventType eventType, EventHandler handler)
     {
         if (!_subscribers[eventType].Contains(handler)) _subscribers[eventType].Add(handler);
     }
 
-    public void Unsubscribe(EventType eventType, EventHandler handler)
+    private void Unsubscribe(EventType eventType, EventHandler handler)
     {
         if (_subscribers[eventType].Contains(handler)) _subscribers[eventType].Remove(handler);
     }
@@ -95,7 +86,6 @@ public class EventSystem
             new { Game = game, Device = device }
         ));
     }
-
 
     public void NotifyGameStarted(object sender, Game game, Device device)
     {
