@@ -10,11 +10,23 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.3",
           "Microsoft.EntityFrameworkCore.Design": "9.0.3",
+          "Microsoft.EntityFrameworkCore.Proxies": "9.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "9.0.3"
         },
         "runtime": {
           "Lab1_4.dll": {}
+        }
+      },
+      "Castle.Core/5.1.1": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.1.0"
+          }
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -373,6 +385,20 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "9.0.3.0",
+            "fileVersion": "9.0.325.11202"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Proxies/9.0.3": {
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.Extensions.Caching.Memory": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
             "assemblyVersion": "9.0.3.0",
             "fileVersion": "9.0.325.11202"
           }
@@ -753,6 +779,7 @@
           }
         }
       },
+      "System.Diagnostics.EventLog/6.0.0": {},
       "System.IO.Pipelines/7.0.0": {},
       "System.Memory/4.5.3": {},
       "System.Reflection.Metadata/7.0.0": {
@@ -770,6 +797,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Castle.Core/5.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "path": "castle.core/5.1.1",
+      "hashPath": "castle.core.5.1.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -875,6 +909,13 @@
       "sha512": "sha512-n5ZrAZ4RFELxYjJxN74lzmFlRrtSpYEYZfZcIJIWPGjSigwJsbya2CnOdjSVDPyfx3rKl9rzbd72D2DNHBJWeA==",
       "path": "microsoft.entityframeworkcore.design/9.0.3",
       "hashPath": "microsoft.entityframeworkcore.design.9.0.3.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Proxies/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Swkw0IIJ3ji64c01VDAYyX8F4nTYPX8hRLo/wJcsImvGaSz3DVjxOj2byROBB0vZL9dtxKf3dtZPSIfLhdWcCQ==",
+      "path": "microsoft.entityframeworkcore.proxies/9.0.3",
+      "hashPath": "microsoft.entityframeworkcore.proxies.9.0.3.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/9.0.3": {
       "type": "package",
@@ -1057,6 +1098,13 @@
       "sha512": "sha512-ZK0KNPfbtxVceTwh+oHNGUOYV2WNOHReX2AXipuvkURC7s/jPwoWfsu3SnDBDgofqbiWr96geofdQ2erm/KTHg==",
       "path": "system.composition.typedparts/7.0.0",
       "hashPath": "system.composition.typedparts.7.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
     "System.IO.Pipelines/7.0.0": {
       "type": "package",

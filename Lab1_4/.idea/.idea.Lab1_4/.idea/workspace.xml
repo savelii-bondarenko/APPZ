@@ -9,8 +9,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d1a981-9f51-4b39-9474-087a991000ef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Controllers/RoomController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Entity/Reservation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Entity/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1_4/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1_4/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1_4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppDatabase.db" beforeDir="false" afterPath="$PROJECT_DIR$/AppDatabase.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppDatabase.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppDatabase.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Entity/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Entity/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Account/AccountMainPage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/AccountMainPage.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Room/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/Lab1_4.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/Lab1_4.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/04o1gqf0jq-c2jlpeoesf.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/04o1gqf0jq-c2jlpeoesf.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/0ctaofcfvt-h1s4sie4z3.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/0ctaofcfvt-h1s4sie4z3.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/0q32kfsqcs-0j3bgjxly4.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/0q32kfsqcs-0j3bgjxly4.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/1o37rlwwd3-ausgxo2sd3.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/1o37rlwwd3-ausgxo2sd3.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/3nbi12wye6-y7v9cxd14o.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/3nbi12wye6-y7v9cxd14o.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/45k5axy3ry-nvvlpmu67g.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/45k5axy3ry-nvvlpmu67g.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/4d6bmy4bdy-cosvhxvwiu.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/4d6bmy4bdy-cosvhxvwiu.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/6wuy0sigsh-r4e9w2rdcm.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/6wuy0sigsh-r4e9w2rdcm.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/hcg2h57e9w-ft3s53vfgj.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/hcg2h57e9w-ft3s53vfgj.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/iepj17xexy-j5mq2jizvt.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/iepj17xexy-j5mq2jizvt.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/jw5lml16j6-hrwsygsryq.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/jw5lml16j6-hrwsygsryq.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/lt7kevsv65-v0zj4ognzu.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/lt7kevsv65-v0zj4ognzu.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/r40iz07k7h-87fc7y1x7t.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/r40iz07k7h-87fc7y1x7t.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/riq9aq25kg-fvhpjtyr6v.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/riq9aq25kg-fvhpjtyr6v.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/rksngxrcad-ttgo8qnofa.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/rksngxrcad-ttgo8qnofa.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/sbafakjnav-kbrnm935zg.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/sbafakjnav-kbrnm935zg.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/se9is9fwg2-aexeepp0ev.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/se9is9fwg2-aexeepp0ev.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/tfk1yrcp3e-ee0r1s7dh0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/tfk1yrcp3e-ee0r1s7dh0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/thgexbos3f-iovd86k7lj.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/thgexbos3f-iovd86k7lj.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/trq0tt74ho-fsbi9cje9m.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/trq0tt74ho-fsbi9cje9m.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/uofk36ngki-jd9uben2k1.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/uofk36ngki-jd9uben2k1.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/uyg7v7zfb5-c2oey78nd0.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/uyg7v7zfb5-c2oey78nd0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/xsxuogir06-61n19gt1b8.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/xsxuogir06-61n19gt1b8.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/yj0l9wwpio-pj5nd1wqec.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/yj0l9wwpio-pj5nd1wqec.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/z363s3kcks-6pdc2jztkx.gz" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/z363s3kcks-6pdc2jztkx.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/ref/Lab1_4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/ref/Lab1_4.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/refint/Lab1_4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/refint/Lab1_4.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.Lab1_4.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.Lab1_4.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.Lab1_4.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.Lab1_4.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Lab1_4.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Lab1_4.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Lab1_4.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Lab1_4.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Lab1_4.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Lab1_4.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Lab1_4.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Lab1_4.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Lab1_4.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Lab1_4.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +104,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/savelii-bondarenko/APPZ.git&quot;,
-    &quot;accountId&quot;: &quot;ebbeef46-4c06-46be-b6f6-9bc06ffb315e&quot;
+    &quot;accountId&quot;: &quot;8042709c-fcbb-464d-a9bc-ac0e9c55e640&quot;
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -59,7 +131,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -111,6 +183,8 @@
       <workItem from="1743151941714" duration="7838000" />
       <workItem from="1743169381952" duration="958000" />
       <workItem from="1743170354754" duration="2770000" />
+      <workItem from="1743248617095" duration="1967000" />
+      <workItem from="1743250937992" duration="3890000" />
     </task>
     <servers />
   </component>
