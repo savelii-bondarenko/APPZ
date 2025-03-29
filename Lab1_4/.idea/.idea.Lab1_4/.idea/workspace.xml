@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f2d1a981-9f51-4b39-9474-087a991000ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1_4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Account/AccountMainPage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/AccountMainPage.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
       <updated>1743151939823</updated>
       <workItem from="1743151941714" duration="7838000" />
       <workItem from="1743169381952" duration="958000" />
-      <workItem from="1743170354754" duration="1767000" />
+      <workItem from="1743170354754" duration="2770000" />
     </task>
     <servers />
   </component>
