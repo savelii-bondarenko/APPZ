@@ -29,6 +29,7 @@ namespace Lab1_4.Controllers
                 var user = _context.Users.FirstOrDefault(u => u.Email == model.Email);
                 if (user != null && VerifyPassword(model.Password, user.Password))
                 {
+                    HttpContext.Session.SetString("UserEmail", user.Email);
                     TempData["Message"] = "Login successful!";
                     return RedirectToAction("Index", "Account");
                 }
@@ -40,6 +41,8 @@ namespace Lab1_4.Controllers
 
             return View(model);
         }
+
+
 
         private bool VerifyPassword(string enteredPassword, string storedPassword)
         {
@@ -56,4 +59,5 @@ namespace Lab1_4.Controllers
             }
         }
     }
+
 }

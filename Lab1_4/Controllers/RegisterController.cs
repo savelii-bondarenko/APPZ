@@ -50,6 +50,8 @@ namespace Lab1_4.Controllers;
             try
             {
                 _context.SaveChanges();
+                HttpContext.Session.SetString("UserEmail", user.Email);
+                TempData["Message"] = "Login successful!";
                 return RedirectToAction("Index", "Account");
             }
             catch (Exception ex)
