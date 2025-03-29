@@ -1,4 +1,4 @@
-﻿using Lab1_4.Models.Entity;
+﻿namespace Lab1_4.Models.Entity;
 
 public class Reservation
 {

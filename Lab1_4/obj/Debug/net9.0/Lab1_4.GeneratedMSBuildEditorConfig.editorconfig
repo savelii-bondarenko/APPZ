@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_4/Views/Reservation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVzZXJ2YXRpb24vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/saveliibondarenko/Documents/APPZ/Lab1_4/Views/Room/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

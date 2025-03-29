@@ -2,7 +2,7 @@
 
 @{
     Layout = "_Layout";
-    ViewData["Title"] = "AllRooms";
+    ViewData["Title"] = "All Rooms";
 }
 
 <div>
@@ -14,18 +14,11 @@
             <th>Category</th>
             <th>Price</th>
             <th>Status</th>
+            <th>Actions</th>
         </tr>
         </thead>
         <tbody>
-        @foreach (var room in Model)
-        {
-            <tr>
-                <td>@room.Id</td>
-                <td>@room.Category</td>
-                <td>@room.Price</td>
-                <td>@(room.IsAvailable ? "Available" : "Booked")</td>
-            </tr>
-        }
+
         </tbody>
     </table>
 </div>

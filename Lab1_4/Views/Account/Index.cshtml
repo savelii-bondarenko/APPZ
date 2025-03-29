@@ -39,6 +39,28 @@
             </div>
         </div>
     </div>
+
+    <!-- Button to toggle the reserved rooms panel -->
+    <div class="d-flex justify-content-center mt-4">
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#reservedRoomsPanel" aria-expanded="false" aria-controls="reservedRoomsPanel">
+            <span class="bi bi-chevron-down" id="collapseIcon"></span> My Reserved Rooms
+        </button>
+    </div>
+
+    <!-- Collapsible panel for reserved rooms -->
+    <div class="collapse" id="reservedRoomsPanel">
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5>Reserved Rooms</h5>
+                <ul>
+                    <li>Room 1: Deluxe Suite</li>
+                    <li>Room 2: Standard Room</li>
+                    <li>Room 3: Executive Room</li>
+                </ul>
+                <a asp-action="Index" asp-controller="Room" class="btn btn-info mt-3">Watch All Rooms</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <style>
@@ -54,8 +76,25 @@
         width: 100%;
     }
 
+    .btn-info {
+        width: 100%;
+    }
+
     .card-body {
         font-size: 1.1rem;
     }
+
+    /* Icon for collapse */
+    .bi-chevron-down {
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+    }
+
+    /* Rotate the icon when the panel is open */
+    .collapse.show + .d-flex button .bi-chevron-down {
+        transform: rotate(180deg);
+    }
 </style>
 
+<!-- Bootstrap 5 JS (for collapse functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>

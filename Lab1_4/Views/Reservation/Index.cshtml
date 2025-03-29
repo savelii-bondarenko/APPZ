@@ -1,0 +1,29 @@
+@model IEnumerable<Lab1_4.Models.Entity.Reservation>
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "My Reservations";
+}
+
+<h2>My Reservations</h2>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Room Number</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var reservation in Model)
+    {
+        <tr>
+            <td>@reservation.Room.Id</td>
+            <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
+            <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>
+            <td>@(reservation.IsActive ? "Active" : "Inactive")</td>
+        </tr>
+    }
+    </tbody>
+</table>
