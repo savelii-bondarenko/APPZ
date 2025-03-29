@@ -1,47 +1,31 @@
-﻿@{
+@model IEnumerable<Lab1_4.Models.Entity.Room>
+
+@{
     Layout = "_Layout";
-    ViewData["Title"] = "Rooms";
+    ViewData["Title"] = "AllRooms";
 }
 
-<div class="d-flex justify-content-end mt-3">
-    <form asp-controller="Register" asp-action="Register" method="get">
-        <button type="submit" class="btn btn-primary me-2">Register</button>
-    </form>
-
-    <form asp-controller="Account" asp-action="Login" method="get">
-        <button type="submit" class="btn btn-success">Log In</button>
-    </form>
-</div>
-
-<table class="table">
-    <thead>
-    <tr>
-        <th>Room Number</th>
-        <th>Category</th>
-        <th>Price</th>
-        <th>Status</th>
-        <th>Actions</th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var room in Model)
-    {
+<div>
+    <h2>All Rooms</h2>
+    <table class="table">
+        <thead>
         <tr>
-            <td>@room.Id</td>
-            <td>@room.Category</td>
-            <td>@room.Price</td>
-            <td>@(room.IsAvailable ? "Available" : "Booked")</td>
-            <td>
-                @if (room.IsAvailable)
-                {
-                    <a href="@Url.Action("Book", "Room", new { roomId = room.Id })" class="btn btn-primary">Book</a>
-                }
-                else
-                {
-                    <span class="btn btn-secondary">Booked</span>
-                }
-            </td>
+            <th>Room Number</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Status</th>
         </tr>
-    }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>@room.Id</td>
+                <td>@room.Category</td>
+                <td>@room.Price</td>
+                <td>@(room.IsAvailable ? "Available" : "Booked")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

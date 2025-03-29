@@ -1,72 +1,70 @@
-using System.Security.Cryptography;
-using Lab1_4.Data;
-using Lab1_4.Models;
-using Lab1_4.Models.Entity;
-using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
+using Lab1_4.Models;
+using Lab1_4.Data;
+using System.Security.Cryptography;
+using System.Text;
+using Lab1_4.Models.Entity;
 
 namespace Lab1_4.Controllers;
-
-public class RegisterController : Controller
-{
-    private readonly AppDbContext _context;
-
-    public RegisterController(AppDbContext context)
+    public class RegisterController : Controller
     {
-        _context = context;
-    }
+        private readonly AppDbContext _context;
 
-    public IActionResult Register()
-    {
-        return View(new RegisterModel());
-    }
-
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Register(RegisterModel model)
-    {
-        if (!ModelState.IsValid)
+        public RegisterController(AppDbContext context)
         {
-            return View(model);
+            _context = context;
         }
 
-        if (_context.Users.Any(x => x.Email == model.Email))
+        [HttpGet]
+        public IActionResult Index()
         {
-            ModelState.AddModelError("Email", "Email is already taken.");
-            return View(model);
+            return View(new RegisterModel());
         }
 
-        var hashedPassword = HashPassword(model.Password);
-
-        var user = new User
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Index(RegisterModel model)
         {
-            Email = model.Email,
-            Password = hashedPassword,
-            FirstName = model.FirstName,
-            LastName = model.LastName
-        };
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
 
-        _context.Users.Add(user);
-        _context.SaveChanges();
+            if (_context.Users.Any(x => x.Email == model.Email))
+            {
+                ModelState.AddModelError("Email", "Email is already taken.");
+                return View(model);
+            }
 
-        return RedirectToAction("ToAccount", "Account");
-    }
+            var hashedPassword = HashPassword(model.Password); // хешируем пароль
 
-    private string HashPassword(string password)
-    {
-        byte[] salt = new byte[128 / 8];
-        using (var rng = RandomNumberGenerator.Create())
-        {
-            rng.GetBytes(salt);
+            var user = new User
+            {
+                Email = model.Email,
+                Password = hashedPassword,
+                FirstName = model.FirstName,
+                LastName = model.LastName
+            };
+
+            _context.Users.Add(user);
+            try
+            {
+                _context.SaveChanges();
+                return RedirectToAction("Index", "Account");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while saving the user. " + ex.Message);
+                return View(model);
+            }
         }
 
-        string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-            password: password,
-            salt: salt,
-            prf: KeyDerivationPrf.HMACSHA256,
-            iterationCount: 10000,
-            numBytesRequested: 256 / 8));
-
-        return $"{Convert.ToBase64String(salt)}.{hashed}";
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return Convert.ToBase64String(bytes);
+            }
+        }
     }
-}

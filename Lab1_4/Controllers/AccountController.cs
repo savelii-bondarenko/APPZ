@@ -4,8 +4,8 @@ namespace Lab1_4.Controllers;
 
 public class AccountController : Controller
 {
-    public IActionResult ToAccount()
+    public IActionResult Index()
     {
-        return View("AccountMainPage");
+        return View();
     }
 }
