@@ -41,4 +41,25 @@ public class AccountController : Controller
     }
 
 
+    public IActionResult Delete(Guid reservationId)
+    {
+        var reservation = _context.Reservations.FirstOrDefault(r => r.Id == reservationId);
+
+        if (reservation != null)
+        {
+            var room = _context.Rooms.FirstOrDefault(r => r.Id == reservation.RoomId);
+
+            _context.Reservations.Remove(reservation);
+            _context.SaveChanges();
+
+            if (room != null)
+            {
+                room.IsAvailable = true;
+                _context.SaveChanges();
+            }
+        }
+
+        return RedirectToAction("Index", "Account");
+    }
+
 }
