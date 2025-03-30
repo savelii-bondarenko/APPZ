@@ -18,7 +18,21 @@
         </tr>
         </thead>
         <tbody>
-
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>@room.Id</td>
+                <td>@room.Category</td>
+                <td>@room.Price.ToString("C")</td>
+                <td>@(room.IsAvailable ? "Available" : "Booked")</td>
+                <td>
+                    @if (room.IsAvailable)
+                    {
+                        <a href="@Url.Action("Index", "Reservation", new { id = room.Id })" class="btn btn-primary">Book</a>
+                    }
+                </td>
+            </tr>
+        }
         </tbody>
     </table>
 </div>

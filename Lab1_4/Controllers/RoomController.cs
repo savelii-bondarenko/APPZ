@@ -17,5 +17,4 @@ public class RoomController : Controller
         var rooms = _context.Rooms.ToList();
         return View(rooms);
     }
-
 }

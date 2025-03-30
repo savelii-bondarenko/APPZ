@@ -3,27 +3,16 @@
 @{
     Layout = "_Layout";
     ViewData["Title"] = "My Reservations";
+    int? roomId = Context.Session.GetInt32("RoomId");
 }
 
-<h2>My Reservations</h2>
-<table class="table">
-    <thead>
-    <tr>
-        <th>Room Number</th>
-        <th>Start Date</th>
-        <th>End Date</th>
-        <th>Status</th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var reservation in Model)
-    {
-        <tr>
-            <td>@reservation.Room.Id</td>
-            <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
-            <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>
-            <td>@(reservation.IsActive ? "Active" : "Inactive")</td>
-        </tr>
-    }
-    </tbody>
-</table>
+
+@if (roomId.HasValue)
+{
+    <h1>Room ID: @roomId.Value</h1>
+}
+else
+{
+    <h1>No Room ID set</h1>
+}
+
