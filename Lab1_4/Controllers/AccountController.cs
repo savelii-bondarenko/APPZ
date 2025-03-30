@@ -1,5 +1,6 @@
 using Lab1_4.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Lab1_4.Controllers;
 
@@ -24,10 +25,20 @@ public class AccountController : Controller
         if (user == null)
             return RedirectToAction("Index", "Home");
 
+        var reservations = _context.Reservations
+            .Where(r => r.User.Email == userEmail)
+            .Include(r => r.Room)
+            .ToList();
+
         ViewData["FirstName"] = user.FirstName;
         ViewData["LastName"] = user.LastName;
         ViewData["UserEmail"] = user.Email;
+        ViewData["Reservations"] = reservations;
+        HttpContext.Session.SetString("UserId", user.Id.ToString());
+
 
         return View();
     }
+
+
 }

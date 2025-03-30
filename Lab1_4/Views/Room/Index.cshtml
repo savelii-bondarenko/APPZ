@@ -28,7 +28,7 @@
                 <td>
                     @if (room.IsAvailable)
                     {
-                        <a href="@Url.Action("Index", "Reservation", new { id = room.Id })" class="btn btn-primary">Book</a>
+                        <a href="@Url.Action("Create", "Reservation", new { roomId = room.Id })" class="btn btn-primary">Book</a>
                     }
                 </td>
             </tr>
