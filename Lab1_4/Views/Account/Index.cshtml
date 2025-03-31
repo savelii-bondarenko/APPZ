@@ -1,0 +1,80 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "User Profile";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header text-center bg-info text-white">
+                    <h3>User Profile</h3>
+                </div>
+                <div class="card-body text-center">
+                    <h4>@ViewData["FirstName"] @ViewData["LastName"]</h4>
+                    <p class="text-muted">@ViewData["UserEmail"]</p>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p><strong>First Name:</strong></p>
+                            <p>@ViewData["FirstName"]</p>
+                        </div>
+                        <div class="col-6">
+                            <p><strong>Last Name:</strong></p>
+                            <p>@ViewData["LastName"]</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p><strong>Email:</strong></p>
+                            <p>@ViewData["UserEmail"]</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary mt-3">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to toggle the reserved rooms panel -->
+    <div class="d-flex justify-content-center mt-4">
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#reservedRoomsPanel" aria-expanded="false" aria-controls="reservedRoomsPanel">
+            <span class="bi bi-chevron-down" id="collapseIcon"></span> My Reserved Rooms
+        </button>
+    </div>
+
+    <!-- Collapsible panel for reserved rooms -->
+    <div class="collapse" id="reservedRoomsPanel">
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5>Reserved Rooms</h5>
+                <ul>
+                    @if (ViewData["Reservations"] is List<Lab1_4.Models.Entity.Reservation> reservations && reservations.Any())
+                    {
+                        foreach (var reservation in reservations)
+                        {
+                            <li>
+                                Room: @reservation.Room.Category -
+                                Date: @reservation.StartDate.ToString("yyyy-MM-dd") to @reservation.EndDate.ToString("yyyy-MM-dd")
+
+                                <form asp-action="Delete" asp-controller="Account" method="post" class="d-inline-block">
+                                    <input type="hidden" name="reservationId" value="@reservation.Id" />
+                                    <button type="submit" class="btn btn-danger btn-sm ml-2">Cancel</button>
+                                </form>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <li>No reservations found.</li>
+                    }
+                </ul>
+                <a asp-action="Index" asp-controller="Room" class="btn btn-info mt-3">Watch All Rooms</a>
+            </div>
+        </div>
+    </div>
+</div>
