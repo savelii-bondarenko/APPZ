@@ -1,5 +1,6 @@
 using Lab1_4.Data;
 using Microsoft.EntityFrameworkCore;
+using Lab1_4.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,10 +18,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddHostedService<ReservationCleanupService>();
+
 var app = builder.Build();
 
 app.UseSession();
-
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
