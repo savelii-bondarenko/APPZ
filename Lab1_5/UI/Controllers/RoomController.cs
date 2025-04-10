@@ -1,19 +1,19 @@
-﻿using Lab1_5.DataAccess;
+﻿using Lab1_5.BusinessLogic.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lab1_5.UI.Controllers;
 
 public class RoomController : Controller
 {
-    private readonly AppDbContext _context;
-    public RoomController(AppDbContext context)
+    private readonly RoomService _roomService;
+    public RoomController(RoomService roomService)
     {
-        _context = context;
+        _roomService = roomService;
     }
 
     public IActionResult Index()
     {
-        var rooms = _context.Rooms.ToList();
+        var rooms = _roomService.GetAll();
         return View(rooms);
     }
 }

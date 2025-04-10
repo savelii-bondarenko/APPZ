@@ -65,4 +65,9 @@ public class UserService
         return _userRepository.GetByCondition(u => u.Email == email);
     }
 
+    public User? GetById(Guid id)
+    {
+        return _userRepository.GetByCondition(u => u.Id == id);
+    }
+
 }

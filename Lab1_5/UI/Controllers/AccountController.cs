@@ -1,16 +1,19 @@
-using Lab1_5.DataAccess;
+using Lab1_5.BusinessLogic.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace Lab1_5.UI.Controllers;
 
 public class AccountController : Controller
 {
-    private readonly AppDbContext _context;
+    private readonly UserService _userService;
+    private readonly ReservationService _reservationService;
+    private readonly RoomService _roomService;
 
-    public AccountController(AppDbContext context)
+    public AccountController(UserService userService, ReservationService reservationService, RoomService roomService)
     {
-        _context = context;
+        _userService = userService;
+        _reservationService = reservationService;
+        _roomService = roomService;
     }
 
     public IActionResult Index()
@@ -20,46 +23,37 @@ public class AccountController : Controller
         if (string.IsNullOrEmpty(userEmail))
             return RedirectToAction("Index", "Home");
 
-        var user = _context.Users.FirstOrDefault(u => u.Email == userEmail);
-
+        var user = _userService.GetByEmail(userEmail);
         if (user == null)
             return RedirectToAction("Index", "Home");
 
-        var reservations = _context.Reservations
-            .Where(r => r.User.Email == userEmail)
-            .Include(r => r.Room)
-            .ToList();
+        var reservations = _reservationService.GetByUserEmailWithRooms(userEmail);
 
         ViewData["FirstName"] = user.FirstName;
         ViewData["LastName"] = user.LastName;
         ViewData["UserEmail"] = user.Email;
         ViewData["Reservations"] = reservations;
-        HttpContext.Session.SetString("UserId", user.Id.ToString());
 
+        HttpContext.Session.SetString("UserId", user.Id.ToString());
 
         return View();
     }
 
-
     public IActionResult Delete(Guid reservationId)
     {
-        var reservation = _context.Reservations.FirstOrDefault(r => r.Id == reservationId);
-
+        var reservation = _reservationService.GetById(reservationId);
         if (reservation != null)
         {
-            var room = _context.Rooms.FirstOrDefault(r => r.Id == reservation.RoomId);
+            _reservationService.Delete(reservation);
 
-            _context.Reservations.Remove(reservation);
-            _context.SaveChanges();
-
+            var room = _roomService.GetById(reservation.RoomId);
             if (room != null)
             {
                 room.IsAvailable = true;
-                _context.SaveChanges();
+                _roomService.Update(room);
             }
         }
 
         return RedirectToAction("Index", "Account");
     }
-
 }

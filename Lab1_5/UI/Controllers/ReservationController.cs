@@ -1,4 +1,4 @@
-using Lab1_5.DataAccess;
+using Lab1_5.BusinessLogic.Services;
 using Lab1_5.Models.Entity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,11 +6,15 @@ namespace Lab1_5.UI.Controllers
 {
     public class ReservationController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly ReservationService _reservationService;
+        private readonly RoomService _roomService;
+        private readonly UserService _userService;
 
-        public ReservationController(AppDbContext context)
+        public ReservationController(ReservationService reservationService, RoomService roomService, UserService userService)
         {
-            _context = context;
+            _reservationService = reservationService;
+            _roomService = roomService;
+            _userService = userService;
         }
 
         public IActionResult Index(int id)
@@ -21,11 +25,11 @@ namespace Lab1_5.UI.Controllers
 
         public IActionResult Create(int roomId)
         {
-            var room = _context.Rooms.FirstOrDefault(r => r.Id == roomId);
+            var room = _roomService.GetById(roomId);
 
             if (room == null || !room.IsAvailable)
             {
-                return NotFound();
+                return NotFound("Room is not available.");
             }
 
             var userId = HttpContext.Session.GetString("UserId");
@@ -43,9 +47,13 @@ namespace Lab1_5.UI.Controllers
         [HttpPost]
         public IActionResult Create(Reservation reservation)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(reservation);
+            }
 
-            var room = _context.Rooms.FirstOrDefault(r => r.Id == reservation.RoomId);
-            var user = _context.Users.FirstOrDefault(u => u.Id == reservation.UserId);
+            var room = _roomService.GetById(reservation.RoomId);
+            var user = _userService.GetById(reservation.UserId);
 
             if (room == null || !room.IsAvailable)
             {
@@ -62,14 +70,12 @@ namespace Lab1_5.UI.Controllers
             reservation.Id = Guid.NewGuid();
             reservation.IsActive = true;
 
-            _context.Reservations.Add(reservation);
-            _context.SaveChanges();
+            _reservationService.Create(reservation);
 
             room.IsAvailable = false;
-            _context.SaveChanges();
+            _roomService.Update(room);
 
             return RedirectToAction("Index", "Account");
         }
-
     }
 }
