@@ -1,0 +1,18 @@
+@model IEnumerable<Lab1_5.Models.Entity.Reservation>
+
+@{
+    Layout = "~/UI/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "My Reservations";
+    int? roomId = Context.Session.GetInt32("RoomId");
+}
+
+
+@if (roomId.HasValue)
+{
+    <h1>Room ID: @roomId.Value</h1>
+}
+else
+{
+    <h1>No Room ID set</h1>
+}
+
