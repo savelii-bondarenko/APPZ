@@ -19,7 +19,8 @@ public class RoomService
 
     public void Update(Room room)
     {
-        throw new NotImplementedException();
+        ArgumentNullException.ThrowIfNull(room);
+        _roomRepository.Update(room);
     }
 
     public void Delete(Room room)
@@ -36,7 +37,4 @@ public class RoomService
     {
         return _roomRepository.GetAll();
     }
-
-
-
 }

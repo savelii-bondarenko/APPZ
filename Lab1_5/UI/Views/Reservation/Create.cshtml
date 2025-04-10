@@ -4,22 +4,27 @@
     ViewData["Title"] = "Book Room";
 }
 
-
-<h2>Book Room</h2>
+<h2>@ViewData["Title"]</h2>
 
 <form asp-action="Create" asp-controller="Reservation" method="post">
+    @Html.AntiForgeryToken()
+
     <div class="form-group">
-        <label for="startDate">Start Date</label>
-        <input type="date" id="startDate" name="StartDate" required class="form-control" />
+        <label asp-for="StartDate"></label>
+        <input asp-for="StartDate" class="form-control" type="date" />
+        <span asp-validation-for="StartDate" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="endDate">End Date</label>
-        <input type="date" id="endDate" name="EndDate" required class="form-control" />
+        <label asp-for="EndDate"></label>
+        <input asp-for="EndDate" class="form-control" type="date" />
+        <span asp-validation-for="EndDate" class="text-danger"></span>
     </div>
 
-    <input type="hidden" name="RoomId" value="@ViewData["RoomId"]" />
-    <input type="hidden" name="UserId" value="@ViewData["UserId"]" />
+    <input asp-for="RoomId" type="hidden" value="@ViewData["RoomId"]" />
+    <input asp-for="UserId" type="hidden" value="@ViewData["UserId"]" />
 
     <button type="submit" class="btn btn-primary">Book</button>
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 </form>

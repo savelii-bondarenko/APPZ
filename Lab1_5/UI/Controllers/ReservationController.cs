@@ -47,10 +47,12 @@ namespace Lab1_5.UI.Controllers
         [HttpPost]
         public IActionResult Create(Reservation reservation)
         {
+            /*
             if (!ModelState.IsValid)
             {
                 return View(reservation);
             }
+            */
 
             var room = _roomService.GetById(reservation.RoomId);
             var user = _userService.GetById(reservation.UserId);
