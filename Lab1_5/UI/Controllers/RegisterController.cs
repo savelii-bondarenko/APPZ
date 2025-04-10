@@ -1,18 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Cryptography;
-using System.Text;
-using Lab1_5.DataAccess;
+
+using Lab1_5.BusinessLogic.Services;
 using Lab1_5.Models;
 using Lab1_5.Models.Entity;
 
 namespace Lab1_5.Controllers;
     public class RegisterController : Controller
     {
-        private readonly AppDbContext _context;
-
-        public RegisterController(AppDbContext context)
+        private readonly UserService _userService;
+        public RegisterController(UserService userService)
         {
-            _context = context;
+            _userService = userService;
         }
 
         [HttpGet]
@@ -30,26 +28,24 @@ namespace Lab1_5.Controllers;
                 return View(model);
             }
 
-            if (_context.Users.Any(x => x.Email == model.Email))
+            if (_userService.IsExists(model.Email))
             {
                 ModelState.AddModelError("Email", "Email is already taken.");
                 return View(model);
             }
 
-            var hashedPassword = HashPassword(model.Password); // хешируем пароль
 
             var user = new User
             {
                 Email = model.Email,
-                Password = hashedPassword,
+                Password = model.Password,
                 FirstName = model.FirstName,
                 LastName = model.LastName
             };
 
-            _context.Users.Add(user);
             try
             {
-                _context.SaveChanges();
+                _userService.Create(user);
                 HttpContext.Session.SetString("UserEmail", user.Email);
                 TempData["Message"] = "Login successful!";
                 return RedirectToAction("Index", "Account");
@@ -61,12 +57,4 @@ namespace Lab1_5.Controllers;
             }
         }
 
-        private string HashPassword(string password)
-        {
-            using (SHA256 sha256Hash = SHA256.Create())
-            {
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-                return Convert.ToBase64String(bytes);
-            }
-        }
     }

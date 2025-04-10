@@ -1,29 +1,42 @@
+using System.Linq.Expressions;
 using Lab1_5.Models.Entity;
 
 namespace Lab1_5.DataAccess.Repositories;
 
-public class UserRepository : IUserRepository
+public class UserRepository : IRepository<User>
 {
     private readonly AppDbContext _context;
-    private UserRepository(AppDbContext context) => _context = context;
 
-    public IEnumerable<User> Get() => _context.Users;
-
-    public void Create(User user)
+    public UserRepository(AppDbContext context)
     {
-        _context.Users.Add(user);
+        _context = context;
+    }
+
+    public IEnumerable<User> GetAll()
+    {
+        return _context.Users.ToList();
+    }
+
+    public User? GetByCondition(Expression<Func<User, bool>> predicate)
+    {
+        return _context.Users.FirstOrDefault(predicate);
+    }
+
+    public void Create(User entity)
+    {
+        _context.Users.Add(entity);
         _context.SaveChanges();
     }
 
-    public void Update(User user)
+    public void Update(User entity)
     {
-        _context.Users.Update(user);
+        _context.Users.Update(entity);
         _context.SaveChanges();
     }
 
-    public void Delete(User user)
+    public void Delete(User entity)
     {
-        _context.Users.Remove(user);
+        _context.Users.Remove(entity);
         _context.SaveChanges();
     }
 }

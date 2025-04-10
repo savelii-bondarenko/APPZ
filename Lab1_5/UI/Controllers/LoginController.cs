@@ -1,10 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography;
 using System.Text;
 using Lab1_5.DataAccess;
 using Lab1_5.Models;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Lab1_5.Controllers
+namespace Lab1_5.UI.Controllers
 {
     public class LoginController : Controller
     {
