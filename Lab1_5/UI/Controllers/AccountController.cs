@@ -2,7 +2,7 @@ using Lab1_5.DataAccess;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lab1_5.Controllers;
+namespace Lab1_5.UI.Controllers;
 
 public class AccountController : Controller
 {

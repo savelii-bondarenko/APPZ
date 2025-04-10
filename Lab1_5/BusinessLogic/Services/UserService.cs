@@ -59,4 +59,10 @@ public class UserService
         var user = _userRepository.GetByCondition(u => u.Email == email);
         return user != null;
     }
+
+    public User? GetByEmail(string email)
+    {
+        return _userRepository.GetByCondition(u => u.Email == email);
+    }
+
 }

@@ -1,10 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
-
 using Lab1_5.BusinessLogic.Services;
 using Lab1_5.Models;
 using Lab1_5.Models.Entity;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Lab1_5.Controllers;
+namespace Lab1_5.UI.Controllers;
     public class RegisterController : Controller
     {
         private readonly UserService _userService;
@@ -24,16 +23,14 @@ namespace Lab1_5.Controllers;
         public IActionResult Index(RegisterModel model)
         {
             if (!ModelState.IsValid)
-            {
                 return View(model);
-            }
+
 
             if (_userService.IsExists(model.Email))
             {
                 ModelState.AddModelError("Email", "Email is already taken.");
                 return View(model);
             }
-
 
             var user = new User
             {

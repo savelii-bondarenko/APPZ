@@ -2,7 +2,7 @@ using Lab1_5.DataAccess;
 using Lab1_5.Models.Entity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lab1_5.Controllers
+namespace Lab1_5.UI.Controllers
 {
     public class ReservationController : Controller
     {
