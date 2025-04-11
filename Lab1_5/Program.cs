@@ -18,8 +18,7 @@ builder.Services.AddSession(options =>
 });
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseLazyLoadingProxies()
-        .UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IRepository<User>, UserRepository>();
