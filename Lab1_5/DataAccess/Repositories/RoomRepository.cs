@@ -20,19 +20,16 @@ public class RoomRepository : IRepository<Room>
     public void Create(Room entity)
     {
         _context.Rooms.Add(entity);
-        _context.SaveChanges();
     }
 
     public void Update(Room entity)
     {
         _context.Rooms.Update(entity);
-        _context.SaveChanges();
     }
 
     public void Delete(Room entity)
     {
         _context.Rooms.Remove(entity);
-        _context.SaveChanges();
     }
 
     public Room? GetByCondition(Expression<Func<Room, bool>> predicate)

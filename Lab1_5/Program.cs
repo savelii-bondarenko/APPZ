@@ -1,5 +1,6 @@
 using Lab1_5.BusinessLogic.Services;
 using Lab1_5.DataAccess;
+using Lab1_5.DataAccess.Interfaces;
 using Lab1_5.DataAccess.Repositories;
 using Lab1_5.Models.Entity;
 using Lab1_5.Services;
@@ -20,11 +21,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseLazyLoadingProxies()
         .UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IRepository<User>, UserRepository>();
 builder.Services.AddScoped<IRepository<Room>, RoomRepository>();
-builder.Services.AddScoped<UserRepository>();
-builder.Services.AddScoped<ReservationRepository>();
-builder.Services.AddScoped<RoomRepository>();
 
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ReservationService>();
@@ -44,7 +43,6 @@ builder.Services.AddControllersWithViews()
 var app = builder.Build();
 
 app.UseSession();
-
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();

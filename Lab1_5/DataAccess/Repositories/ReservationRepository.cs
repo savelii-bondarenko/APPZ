@@ -23,19 +23,16 @@ namespace Lab1_5.DataAccess.Repositories
         public void Create(Reservation entity)
         {
             _context.Reservations.Add(entity);
-            _context.SaveChanges();
         }
 
         public void Update(Reservation entity)
         {
             _context.Reservations.Update(entity);
-            _context.SaveChanges();
         }
 
         public void Delete(Reservation entity)
         {
             _context.Reservations.Remove(entity);
-            _context.SaveChanges();
         }
 
         public Reservation? GetByCondition(Expression<Func<Reservation, bool>> predicate)

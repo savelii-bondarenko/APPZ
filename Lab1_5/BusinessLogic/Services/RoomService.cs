@@ -1,15 +1,16 @@
-using Lab1_5.DataAccess.Repositories;
+using Lab1_5.DataAccess;
+using Lab1_5.DataAccess.Interfaces;
 using Lab1_5.Models.Entity;
 
 namespace Lab1_5.BusinessLogic.Services;
 
 public class RoomService
 {
-    private readonly IRepository<Room> _roomRepository;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public RoomService(IRepository<Room> roomRepository)
+    public RoomService(IUnitOfWork unitOfWork)
     {
-        _roomRepository = roomRepository;
+        _unitOfWork = unitOfWork;
     }
 
     public void Create(Room room)
@@ -20,7 +21,8 @@ public class RoomService
     public void Update(Room room)
     {
         ArgumentNullException.ThrowIfNull(room);
-        _roomRepository.Update(room);
+        _unitOfWork.Rooms.Update(room);
+        _unitOfWork.SaveChanges();
     }
 
     public void Delete(Room room)
@@ -30,11 +32,11 @@ public class RoomService
 
     public Room? GetById(int id)
     {
-        return _roomRepository.GetByCondition(r => r.Id == id);
+        return _unitOfWork.Rooms.GetByCondition(r => r.Id == id);
     }
 
     public IEnumerable<Room> GetAll()
     {
-        return _roomRepository.GetAll();
+        return _unitOfWork.Rooms.GetAll();
     }
 }

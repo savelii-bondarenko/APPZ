@@ -25,18 +25,15 @@ public class UserRepository : IRepository<User>
     public void Create(User entity)
     {
         _context.Users.Add(entity);
-        _context.SaveChanges();
     }
 
     public void Update(User entity)
     {
         _context.Users.Update(entity);
-        _context.SaveChanges();
     }
 
     public void Delete(User entity)
     {
         _context.Users.Remove(entity);
-        _context.SaveChanges();
     }
 }
