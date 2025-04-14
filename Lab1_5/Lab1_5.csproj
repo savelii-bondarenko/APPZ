@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="9.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="9.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="BusinessLogic\" />
+      <Folder Include="UI\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Account\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Login\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Register\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservation\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservation\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Room\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\_ViewImports.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="UI\Views\Account\Index.cshtml" />
+      <AdditionalFiles Include="UI\Views\Home\Index.cshtml" />
+      <AdditionalFiles Include="UI\Views\Login\Index.cshtml" />
+      <AdditionalFiles Include="UI\Views\Register\Index.cshtml" />
+      <AdditionalFiles Include="UI\Views\Reservation\Create.cshtml" />
+      <AdditionalFiles Include="UI\Views\Reservation\Index.cshtml" />
+      <AdditionalFiles Include="UI\Views\Room\Index.cshtml" />
+      <AdditionalFiles Include="UI\Views\Shared\Error.cshtml" />
+      <AdditionalFiles Include="UI\Views\Shared\_Layout.cshtml" />
+      <AdditionalFiles Include="UI\Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <AdditionalFiles Include="UI\Views\_ViewImports.cshtml" />
+    </ItemGroup>
+
+</Project>

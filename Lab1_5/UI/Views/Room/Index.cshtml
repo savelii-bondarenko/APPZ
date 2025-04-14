@@ -1,0 +1,38 @@
+@model IEnumerable<Lab1_5.Models.Entity.Room>
+
+@{
+    Layout = "~/UI/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "All Rooms";
+}
+
+<div>
+    <h2>All Rooms</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Room Number</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>@room.Id</td>
+                <td>@room.Category</td>
+                <td>@room.Price.ToString("C")</td>
+                <td>@(room.IsAvailable ? "Available" : "Booked")</td>
+                <td>
+                    @if (room.IsAvailable)
+                    {
+                        <a href="@Url.Action("Create", "Reservation", new { roomId = room.Id })" class="btn btn-primary">Book</a>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
