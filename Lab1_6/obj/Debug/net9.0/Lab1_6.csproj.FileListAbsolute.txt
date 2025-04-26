@@ -217,5 +217,5 @@
 /Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/Lab1_6.pdb
 /Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/Lab1_6.genruntimeconfig.cache
 /Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/ref/Lab1_6.dll
+/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/jaj7vix7ou-cpbatflpxr.gz
 /Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/4oijrk29ay-t9hnci8wm4.gz
-/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/jaj7vix7ou-vo5fwigtkd.gz

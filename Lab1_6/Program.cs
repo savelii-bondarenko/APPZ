@@ -23,7 +23,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IRepository<User>, UserRepository>();
 builder.Services.AddScoped<IRepository<Room>, RoomRepository>();
-
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ReservationService>();
 builder.Services.AddScoped<RoomService>();
@@ -42,6 +41,7 @@ builder.Services.AddControllersWithViews()
 var app = builder.Build();
 
 app.UseSession();
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();

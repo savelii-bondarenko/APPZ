@@ -1,36 +1,46 @@
-function OnClick(event) {
-    // Get the values from the input fields
-    let startDateValue = document.getElementById('StartDate').value;
-    let endDateValue = document.getElementById('EndDate').value;
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded');
+    const form = document.getElementById('reservation-form');
 
-    // Get the current date and time (removing time part for today comparison)
-    let today = new Date();
-    today.setHours(0, 0, 0, 0); // Remove the time part for today comparison
-
-    // Check if both start date and end date are selected
-    if (!startDateValue || !endDateValue) {
-        alert("Please select both start and end dates.");
-        event.preventDefault();  // Prevent form submission
-        return false;
+    if (!form) {
+        console.error('Форма не найдена!');
+        return;
     }
 
-    // Convert string date-time to Date objects
-    let startDate = new Date(startDateValue);
-    let endDate = new Date(endDateValue);
+    form.addEventListener('submit', function (event) {
+        console.log("Срабатывает submit!");
 
-    // Check if the start date is in the past
-    if (startDate < today) {
-        alert("Start date cannot be in the past.");
-        event.preventDefault();  // Prevent form submission
-        return false;
+        let startInput = document.getElementById("StartDate").value;
+        let endInput = document.getElementById("EndDate").value;
+
+        let startDate = new Date(startInput);
+        let endDate = new Date(endInput);
+        let now = new Date();
+        now.setSeconds(0, 0);
+
+        if (!startDate.getTime() || !endDate.getTime()) {
+            showError("Please enter a valid date.", event);
+            return false;
+        }
+
+        if (startDate < now) {
+            showError("Start date cannot be in the past.", event);
+            return false;
+        }
+
+        if (endDate < now) {
+            showError("End date cannot be in the past.", event);
+            return false;
+        }
+
+        if (startDate >= endDate) {
+            showError("Start date must be earlier than end date.", event);
+            return false;
+        }
+    });
+
+    function showError(message, event) {
+        alert(message);
+        event.preventDefault();
     }
-
-    // Check if start date is after end date
-    if (startDate > endDate) {
-        alert("Start date cannot be after end date.");
-        event.preventDefault();  // Prevent form submission
-        return false;
-    }
-
-    // If everything is valid, allow form submission
-}
+});
