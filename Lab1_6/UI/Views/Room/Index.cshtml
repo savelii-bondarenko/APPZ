@@ -1,5 +1,4 @@
 @model IEnumerable<Lab1_6.Models.Entity.Room>
-
 @{
     Layout = "~/UI/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "All Rooms";
@@ -14,6 +13,7 @@
             <th>Category</th>
             <th>Price</th>
             <th>Status</th>
+            <th>Current Reservations</th>
             <th>Actions</th>
         </tr>
         </thead>
@@ -25,6 +25,28 @@
                 <td>@room.Category</td>
                 <td>@room.Price.ToString("C")</td>
                 <td>@(room.IsAvailable ? "Available" : "Booked")</td>
+
+                <!-- Display current reservations -->
+                <td>
+                    @if (room.Reservations != null && room.Reservations.Any())
+                    {
+                        <ul>
+                            @foreach (var reservation in room.Reservations)
+                            {
+                                <li>
+                                    <strong>From:</strong> @reservation.StartDate.ToString("yyyy-MM-dd HH:mm")
+                                    <strong>To:</strong> @reservation.EndDate.ToString("yyyy-MM-dd HH:mm")
+                                    <br/>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <span>No current reservations</span>
+                    }
+                </td>
+
                 <td>
                     @if (room.IsAvailable)
                     {

@@ -57,7 +57,7 @@
                         {
                             <li>
                                 Room: @reservation.Room.Category -
-                                Date: @reservation.StartDate.ToString("yyyy-MM-dd") to @reservation.EndDate.ToString("yyyy-MM-dd")
+                                Date: @reservation.StartDate.ToString("yyyy-MM-dd HH:mm") to @reservation.EndDate.ToString("yyyy-MM-dd HH:mm")
 
                                 <form asp-action="Delete" asp-controller="Account" method="post" class="d-inline-block">
                                     <input type="hidden" name="reservationId" value="@reservation.Id" />

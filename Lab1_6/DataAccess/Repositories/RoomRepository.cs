@@ -1,5 +1,5 @@
-using System.Linq.Expressions;
 using Lab1_6.Models.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Lab1_6.DataAccess.Repositories;
 
@@ -12,5 +12,8 @@ public class RoomRepository : BaseRepository<Room>
         _context = context;
     }
 
-
+    public override IEnumerable<Room> GetAll()
+    {
+        return _context.Set<Room>().Include(r => r.Reservations).ToList();
+    }
 }

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/js/form-data-validation.js",
+      "PackagePath": "staticwebassets/js/form-data-validation.js"
+    },
+    {
       "Id": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/js/form-validation.js",
       "PackagePath": "staticwebassets/js/form-validation.js"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7w4g/xWM5NZ/I1kpxzUJeTUQ/W3nNeDrJALNHxt6pHY=",
+  "Hash": "bbdrRjFF6og16c11iNKdohZHJ42tgExnfofvVzFnjAg=",
   "Source": "Lab1_6",
   "BasePath": "_content/Lab1_6",
   "Mode": "Default",
@@ -731,6 +731,27 @@
       "OriginalItemSpec": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
+      "Identity": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/jaj7vix7ou-vo5fwigtkd.gz",
+      "SourceId": "Lab1_6",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/Lab1_6",
+      "RelativePath": "js/form-data-validation#[.{fingerprint=vo5fwigtkd}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/js/form-data-validation.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ut56lu8x3q",
+      "Integrity": "/m9YMWZQWdrzbb/+jU6RCR1uiQz25U+0DxIApKTs0Sk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/js/form-data-validation.js"
+    },
+    {
       "Identity": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/jbn9vqr7g6-dxx9fxp4il.gz",
       "SourceId": "Lab1_6",
       "SourceType": "Discovered",
@@ -1380,6 +1401,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/js/form-data-validation.js",
+      "SourceId": "Lab1_6",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/",
+      "BasePath": "_content/Lab1_6",
+      "RelativePath": "js/form-data-validation#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vo5fwigtkd",
+      "Integrity": "cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/form-data-validation.js"
     },
     {
       "Identity": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/js/form-validation.js",
@@ -3282,6 +3324,304 @@
       ]
     },
     {
+      "Route": "js/form-data-validation.js",
+      "AssetFile": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/jaj7vix7ou-vo5fwigtkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002202643172"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "453"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/m9YMWZQWdrzbb/+jU6RCR1uiQz25U+0DxIApKTs0Sk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 08:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8="
+        }
+      ]
+    },
+    {
+      "Route": "js/form-data-validation.js",
+      "AssetFile": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/js/form-data-validation.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 08:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8="
+        }
+      ]
+    },
+    {
+      "Route": "js/form-data-validation.js.gz",
+      "AssetFile": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/jaj7vix7ou-vo5fwigtkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/m9YMWZQWdrzbb/+jU6RCR1uiQz25U+0DxIApKTs0Sk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 08:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/m9YMWZQWdrzbb/+jU6RCR1uiQz25U+0DxIApKTs0Sk="
+        }
+      ]
+    },
+    {
+      "Route": "js/form-data-validation.vo5fwigtkd.js",
+      "AssetFile": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/jaj7vix7ou-vo5fwigtkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002202643172"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "453"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/m9YMWZQWdrzbb/+jU6RCR1uiQz25U+0DxIApKTs0Sk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 08:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vo5fwigtkd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/form-data-validation.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8="
+        }
+      ]
+    },
+    {
+      "Route": "js/form-data-validation.vo5fwigtkd.js",
+      "AssetFile": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/wwwroot/js/form-data-validation.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 08:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vo5fwigtkd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/form-data-validation.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cU17Ot6Plt38NxecbeeX0oU7+JO3+MZGoePm6+kdme8="
+        }
+      ]
+    },
+    {
+      "Route": "js/form-data-validation.vo5fwigtkd.js.gz",
+      "AssetFile": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/jaj7vix7ou-vo5fwigtkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/m9YMWZQWdrzbb/+jU6RCR1uiQz25U+0DxIApKTs0Sk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 08:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vo5fwigtkd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/form-data-validation.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/m9YMWZQWdrzbb/+jU6RCR1uiQz25U+0DxIApKTs0Sk="
+        }
+      ]
+    },
+    {
       "Route": "js/form-validation.js",
       "AssetFile": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/Debug/net9.0/compressed/4oijrk29ay-t9hnci8wm4.gz",
       "Selectors": [
@@ -3306,7 +3646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 18:50:46 GMT"
+          "Value": "Sat, 26 Apr 2025 07:41:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3359,7 +3699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 18:50:46 GMT"
+          "Value": "Sat, 26 Apr 2025 07:41:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3396,7 +3736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 18:50:46 GMT"
+          "Value": "Sat, 26 Apr 2025 07:41:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3443,7 +3783,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 18:50:46 GMT"
+          "Value": "Sat, 26 Apr 2025 07:41:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3504,7 +3844,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 18:50:46 GMT"
+          "Value": "Sat, 26 Apr 2025 07:41:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3549,7 +3889,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 18:50:46 GMT"
+          "Value": "Sat, 26 Apr 2025 07:41:47 GMT"
         },
         {
           "Name": "Cache-Control",
