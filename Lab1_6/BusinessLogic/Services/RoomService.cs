@@ -4,29 +4,22 @@ using Lab1_6.Models.Entity;
 
 namespace Lab1_6.BusinessLogic.Services;
 
-public class RoomService
+public class RoomService(IUnitOfWork unitOfWork)
 {
-    private readonly IUnitOfWork _unitOfWork;
-
-    public RoomService(IUnitOfWork unitOfWork)
-    {
-        _unitOfWork = unitOfWork;
-    }
-
     public void Update(Room room)
     {
         ArgumentNullException.ThrowIfNull(room);
-        _unitOfWork.Rooms.Update(room);
-        _unitOfWork.SaveChanges();
+        unitOfWork.Rooms.Update(room);
+        unitOfWork.SaveChanges();
     }
 
     public Room? GetById(int id)
     {
-        return _unitOfWork.Rooms.GetByCondition(r => r.Id == id);
+        return unitOfWork.Rooms.GetByCondition(r => r.Id == id);
     }
 
     public IEnumerable<Room> GetAll()
     {
-        return _unitOfWork.Rooms.GetAll();
+        return unitOfWork.Rooms.GetAll();
     }
 }

@@ -1,25 +1,17 @@
 using Lab1_6.DataAccess;
 
-namespace Lab1_6.Services;
+namespace Lab1_6.BusinessLogic.Services;
 
-public class ReservationCleanupService : BackgroundService
+public class ReservationCleanupService(IServiceProvider serviceProvider, ILogger<ReservationCleanupService> logger)
+    : BackgroundService
 {
-    private readonly IServiceProvider _serviceProvider;
-    private readonly ILogger<ReservationCleanupService> _logger;
-
-    public ReservationCleanupService(IServiceProvider serviceProvider, ILogger<ReservationCleanupService> logger)
-    {
-        _serviceProvider = serviceProvider;
-        _logger = logger;
-    }
-
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
         {
             try
             {
-                using (var scope = _serviceProvider.CreateScope())
+                using (var scope = serviceProvider.CreateScope())
                 {
                     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
@@ -41,13 +33,13 @@ public class ReservationCleanupService : BackgroundService
                         }
 
                         await dbContext.SaveChangesAsync();
-                        _logger.LogInformation($"Deleted {expiredReservations.Count} of overdue reservations.");
+                        logger.LogInformation($"Deleted {expiredReservations.Count} of overdue reservations.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error when deleting reservations: {ex.Message}");
+                logger.LogError($"Error when deleting reservations: {ex.Message}");
             }
 
             await Task.Delay(TimeSpan.FromMinutes(30), stoppingToken);

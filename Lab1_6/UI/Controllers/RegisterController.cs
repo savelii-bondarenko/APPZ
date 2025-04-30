@@ -4,14 +4,8 @@ using Lab1_6.Models.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lab1_6.UI.Controllers;
-    public class RegisterController : Controller
+    public class RegisterController(UserService userService) : Controller
     {
-        private readonly UserService _userService;
-        public RegisterController(UserService userService)
-        {
-            _userService = userService;
-        }
-
         [HttpGet]
         public IActionResult Index()
         {
@@ -26,7 +20,7 @@ namespace Lab1_6.UI.Controllers;
                 return View(model);
 
 
-            if (_userService.IsExists(model.Email))
+            if (userService.IsExists(model.Email))
             {
                 ModelState.AddModelError("Email", "Email is already taken.");
                 return View(model);
@@ -42,7 +36,7 @@ namespace Lab1_6.UI.Controllers;
 
             try
             {
-                _userService.Create(user);
+                userService.Create(user);
                 HttpContext.Session.SetString("UserEmail", user.Email);
                 TempData["Message"] = "Login successful!";
                 return RedirectToAction("Index", "Account");

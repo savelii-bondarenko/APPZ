@@ -5,25 +5,16 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Lab1_6.BusinessLogic.Services;
 
-public class UserService
+public class UserService(IPasswordHasher<User> passwordHasher, IUnitOfWork unitOfWork)
 {
-    private readonly IUnitOfWork _unitOfWork;
-    private readonly IPasswordHasher<User> _passwordHasher;
-
-    public UserService(IPasswordHasher<User> passwordHasher, IUnitOfWork unitOfWork)
-    {
-        _passwordHasher = passwordHasher;
-        _unitOfWork = unitOfWork;
-    }
-
     public void Create(User entity)
     {
         if (IsExists(entity.Email))
             throw new Exception($"Email {entity.Email} already exists");
 
-        entity.Password = _passwordHasher.HashPassword(entity, entity.Password);
-        _unitOfWork.Users.Create(entity);
-        _unitOfWork.SaveChanges();
+        entity.Password = passwordHasher.HashPassword(entity, entity.Password);
+        unitOfWork.Users.Create(entity);
+        unitOfWork.SaveChanges();
     }
 
     public void Update(User entity)
@@ -35,11 +26,11 @@ public class UserService
 
         if (!string.IsNullOrEmpty(entity.Password))
         {
-            entity.Password = _passwordHasher.HashPassword(entity, entity.Password);
+            entity.Password = passwordHasher.HashPassword(entity, entity.Password);
         }
 
-        _unitOfWork.Users.Update(entity);
-        _unitOfWork.SaveChanges();
+        unitOfWork.Users.Update(entity);
+        unitOfWork.SaveChanges();
 
     }
 
@@ -50,25 +41,25 @@ public class UserService
             throw new Exception($"Email {entity.Email} isn't exists");
         }
 
-        _unitOfWork.Users.Delete(entity);
-        _unitOfWork.SaveChanges();
+        unitOfWork.Users.Delete(entity);
+        unitOfWork.SaveChanges();
 
     }
 
     public bool IsExists(string email)
     {
-        var user = _unitOfWork.Users.GetByCondition(u => u.Email == email);
+        var user = unitOfWork.Users.GetByCondition(u => u.Email == email);
         return user != null;
     }
 
     public User? GetByEmail(string email)
     {
-        return _unitOfWork.Users.GetByCondition(u => u.Email == email);
+        return unitOfWork.Users.GetByCondition(u => u.Email == email);
     }
 
     public User? GetById(Guid id)
     {
-        return _unitOfWork.Users.GetByCondition(u => u.Id == id);
+        return unitOfWork.Users.GetByCondition(u => u.Id == id);
     }
 
 }

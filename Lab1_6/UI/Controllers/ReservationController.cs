@@ -4,19 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Lab1_6.UI.Controllers
 {
-    public class ReservationController : Controller
+    public class ReservationController(
+        ReservationService reservationService,
+        RoomService roomService,
+        UserService userService)
+        : Controller
     {
-        private readonly ReservationService _reservationService;
-        private readonly RoomService _roomService;
-        private readonly UserService _userService;
-
-        public ReservationController(ReservationService reservationService, RoomService roomService, UserService userService)
-        {
-            _reservationService = reservationService;
-            _roomService = roomService;
-            _userService = userService;
-        }
-
         public IActionResult Index(int id)
         {
             HttpContext.Session.SetInt32("RoomId", id);
@@ -25,7 +18,7 @@ namespace Lab1_6.UI.Controllers
 
         public IActionResult Create(int roomId)
         {
-            var room = _roomService.GetById(roomId);
+            var room = roomService.GetById(roomId);
 
             if (room == null || !room.IsAvailable)
             {
@@ -54,8 +47,8 @@ namespace Lab1_6.UI.Controllers
             }
             */
 
-            var room = _roomService.GetById(reservation.RoomId);
-            var user = _userService.GetById(reservation.UserId);
+            var room = roomService.GetById(reservation.RoomId);
+            var user = userService.GetById(reservation.UserId);
 
             if (room == null || !room.IsAvailable)
             {
@@ -72,10 +65,10 @@ namespace Lab1_6.UI.Controllers
             reservation.Id = Guid.NewGuid();
             reservation.IsActive = true;
 
-            _reservationService.Create(reservation);
+            reservationService.Create(reservation);
 
             room.IsAvailable = false;
-            _roomService.Update(room);
+            roomService.Update(room);
 
             return RedirectToAction("Index", "Account");
         }

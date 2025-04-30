@@ -3,19 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Lab1_6.UI.Controllers;
 
-public class AccountController : Controller
+public class AccountController(UserService userService, ReservationService reservationService, RoomService roomService)
+    : Controller
 {
-    private readonly UserService _userService;
-    private readonly ReservationService _reservationService;
-    private readonly RoomService _roomService;
-
-    public AccountController(UserService userService, ReservationService reservationService, RoomService roomService)
-    {
-        _userService = userService;
-        _reservationService = reservationService;
-        _roomService = roomService;
-    }
-
     public IActionResult Index()
     {
         string? userEmail = HttpContext.Session.GetString("UserEmail");
@@ -23,11 +13,11 @@ public class AccountController : Controller
         if (string.IsNullOrEmpty(userEmail))
             return RedirectToAction("Index", "Home");
 
-        var user = _userService.GetByEmail(userEmail);
+        var user = userService.GetByEmail(userEmail);
         if (user == null)
             return RedirectToAction("Index", "Home");
 
-        var reservations = _reservationService.GetByUserEmailWithRooms(userEmail);
+        var reservations = reservationService.GetByUserEmailWithRooms(userEmail);
 
         ViewData["FirstName"] = user.FirstName;
         ViewData["LastName"] = user.LastName;
@@ -41,16 +31,16 @@ public class AccountController : Controller
 
     public IActionResult Delete(Guid reservationId)
     {
-        var reservation = _reservationService.GetById(reservationId);
+        var reservation = reservationService.GetById(reservationId);
         if (reservation != null)
         {
-            _reservationService.Delete(reservation);
+            reservationService.Delete(reservation);
 
-            var room = _roomService.GetById(reservation.RoomId);
+            var room = roomService.GetById(reservation.RoomId);
             if (room != null)
             {
                 room.IsAvailable = true;
-                _roomService.Update(room);
+                roomService.Update(room);
             }
         }
 

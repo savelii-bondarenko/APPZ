@@ -3,14 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Lab1_6.DataAccess.Repositories;
 
-public class RoomRepository : BaseRepository<Room>
+public class RoomRepository(AppDbContext context) : BaseRepository<Room>(context)
 {
-    private readonly AppDbContext _context;
-
-    public RoomRepository(AppDbContext context) : base(context)
-    {
-        _context = context;
-    }
+    private readonly AppDbContext _context = context;
 
     public override IEnumerable<Room> GetAll()
     {

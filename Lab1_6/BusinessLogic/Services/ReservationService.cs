@@ -3,46 +3,39 @@ using Lab1_6.Models.Entity;
 
 namespace Lab1_6.BusinessLogic.Services;
 
-public class ReservationService
+public class ReservationService(IUnitOfWork unitOfWork)
 {
-    private readonly IUnitOfWork _unitOfWork;
-
-    public ReservationService(IUnitOfWork unitOfWork)
-    {
-        _unitOfWork = unitOfWork;
-    }
-
     public void Create(Reservation reservation)
     {
-        _unitOfWork.Reservations.Create(reservation);
-        _unitOfWork.SaveChanges();
+        unitOfWork.Reservations.Create(reservation);
+        unitOfWork.SaveChanges();
     }
 
     public void Update(Reservation reservation)
     {
-        _unitOfWork.Reservations.Update(reservation);
-        _unitOfWork.SaveChanges();
+        unitOfWork.Reservations.Update(reservation);
+        unitOfWork.SaveChanges();
     }
 
     public void Delete(Reservation reservation)
     {
-        _unitOfWork.Reservations.Delete(reservation);
-        _unitOfWork.SaveChanges();
+        unitOfWork.Reservations.Delete(reservation);
+        unitOfWork.SaveChanges();
     }
 
     public IEnumerable<Reservation> GetAll()
     {
-        return _unitOfWork.Reservations.GetAll();
+        return unitOfWork.Reservations.GetAll();
     }
 
     public Reservation? GetById(Guid id)
     {
-        return _unitOfWork.Reservations.GetByCondition(r => r.Id == id);
+        return unitOfWork.Reservations.GetByCondition(r => r.Id == id);
     }
 
     public IEnumerable<Reservation> GetByUserEmailWithRooms(string email)
     {
-        return _unitOfWork.Reservations
+        return unitOfWork.Reservations
             .GetAll()
             .Where(r => r.User.Email == email)
             .ToList();

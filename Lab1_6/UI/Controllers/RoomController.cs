@@ -3,17 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Lab1_6.UI.Controllers;
 
-public class RoomController : Controller
+public class RoomController(RoomService roomService) : Controller
 {
-    private readonly RoomService _roomService;
-    public RoomController(RoomService roomService)
-    {
-        _roomService = roomService;
-    }
-
     public IActionResult Index()
     {
-        var rooms = _roomService.GetAll();
+        var rooms = roomService.GetAll();
         return View(rooms);
     }
 }

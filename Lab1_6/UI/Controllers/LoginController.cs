@@ -6,17 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Lab1_6.UI.Controllers;
 
-public class LoginController : Controller
+public class LoginController(UserService userService, IPasswordHasher<User> passwordHasher)
+    : Controller
 {
-    private readonly UserService _userService;
-    private readonly IPasswordHasher<User> _passwordHasher;
-
-    public LoginController(UserService userService, IPasswordHasher<User> passwordHasher)
-    {
-        _userService = userService;
-        _passwordHasher = passwordHasher;
-    }
-
     [HttpGet]
     public IActionResult Index()
     {
@@ -30,10 +22,10 @@ public class LoginController : Controller
         if (!ModelState.IsValid)
             return View(model);
 
-        var user = _userService.GetByEmail(model.Email);
+        var user = userService.GetByEmail(model.Email);
         if (user != null)
         {
-            var result = _passwordHasher.VerifyHashedPassword(user, user.Password, model.Password);
+            var result = passwordHasher.VerifyHashedPassword(user, user.Password, model.Password);
             if (result == PasswordVerificationResult.Success)
             {
                 HttpContext.Session.SetString("UserEmail", user.Email);
