@@ -34,6 +34,9 @@
       <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
       <_ContentIncludedByDefault Remove="Views\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Lab1_6.Tests\obj\Lab1_6.Tests.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="Lab1_6.Tests\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Lab1_6.Tests\obj\project.packagespec.json" />
     </ItemGroup>
 
     <ItemGroup>
