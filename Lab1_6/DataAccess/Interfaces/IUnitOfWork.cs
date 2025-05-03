@@ -8,6 +8,5 @@ public interface IUnitOfWork : IDisposable
     IRepository<User> Users { get; }
     IRepository<Room> Rooms { get; }
     IRepository<Reservation> Reservations { get; }
-
     int SaveChanges();
 }

@@ -3213,24 +3213,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/saveliibondarenko/.nuget/packages/": {}
+    "C:\\Users\\savab\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/Lab1_6.csproj",
+      "projectUniqueName": "C:\\Users\\savab\\OneDrive\\Документы\\APPZ\\Lab1_6\\Lab1_6.csproj",
       "projectName": "Lab1_6",
-      "projectPath": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/Lab1_6.csproj",
-      "packagesPath": "/Users/saveliibondarenko/.nuget/packages/",
-      "outputPath": "/Users/saveliibondarenko/Documents/APPZ/Lab1_6/obj/",
+      "projectPath": "C:\\Users\\savab\\OneDrive\\Документы\\APPZ\\Lab1_6\\Lab1_6.csproj",
+      "packagesPath": "C:\\Users\\savab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\savab\\OneDrive\\Документы\\APPZ\\Lab1_6\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/saveliibondarenko/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\savab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3297,7 +3304,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
