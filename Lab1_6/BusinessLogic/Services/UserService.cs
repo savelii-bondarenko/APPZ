@@ -30,7 +30,6 @@ public class UserService(IPasswordHasher<User> passwordHasher, IUnitOfWork unitO
 
         unitOfWork.Users.Update(entity);
         unitOfWork.SaveChanges();
-
     }
 
     public void Delete(User entity)
@@ -42,7 +41,6 @@ public class UserService(IPasswordHasher<User> passwordHasher, IUnitOfWork unitO
 
         unitOfWork.Users.Delete(entity);
         unitOfWork.SaveChanges();
-
     }
 
     public bool IsExists(string email)
@@ -53,12 +51,12 @@ public class UserService(IPasswordHasher<User> passwordHasher, IUnitOfWork unitO
 
     public User? GetByEmail(string email)
     {
-        return unitOfWork.Users.GetByCondition(u => u.Email == email);
+        return unitOfWork.Users.GetByCondition(u => u.Email == email); 
     }
 
     public User? GetById(Guid id)
     {
-        return unitOfWork.Users.GetByCondition(u => u.Id == id);
+        return unitOfWork.Users.GetByCondition(u => u.Id == id); 
     }
 
 }

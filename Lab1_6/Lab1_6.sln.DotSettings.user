@@ -8,4 +8,45 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AInternalDbSet_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003Fa8f525b34e074d7c1c1ee2f97d75fed82d55ae9102858934b3ef12954923d91_003FInternalDbSet_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AModelStateDictionary_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003F23865b0b11975eb21feb5e2a9f7cac7d8fcbcb79d03adc901264294d8a464_003FModelStateDictionary_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ANullable_00601_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F76b26a7a511f48aeba3bce44a1ba437af82e00_003F2e_003F0f1b90dc_003FNullable_00601_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AType_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F76b26a7a511f48aeba3bce44a1ba437af82e00_003F93_003Fe6b129f9_003FType_002Ecs/@EntryIndexedValue">ForceIncluded</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ASubstitute_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F402b2077f38742cb9b381ab9e79e493229c00_003Fcc_003F70a55a51_003FSubstitute_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AType_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F76b26a7a511f48aeba3bce44a1ba437af82e00_003F93_003Fe6b129f9_003FType_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06a4f481_002D38a7_002D4553_002Dbde7_002Da196067b4166/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;TestProject1&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\TestProject1" Presentation="&amp;lt;TestProject1&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0e13335e_002D7780_002D4f03_002Dbba0_002D2c33423c2f62/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Lab1_6.Tests&amp;gt; #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests" Presentation="&amp;lt;Lab1_6.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=426fd9cc_002D132f_002D4c24_002D8e96_002De3a7a7d6c7d9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from BussinessLogic_Services_UserServiceTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;14ACC8C8-9368-47C3-A358-336E96682E96/d:Services.Tests/f:BussinessLogic_Services_UserServiceTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=55b7eba4_002D72c9_002D4219_002D971e_002Daf24088fe80b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Lab1_6.Tests&amp;gt; #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests" Presentation="&amp;lt;Lab1_6.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6e975ae6_002Dd93c_002D49af_002D807e_002D8b82b6da431d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;Lab1_6.Tests&amp;gt; #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests" Presentation="&amp;lt;Lab1_6.Tests&amp;gt;" /&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::5B666C5A-45DA-4B4A-A4FB-F9B0C46C6931::net9.0::TestProject1.Services.Tests.BussinessLogic_Services_UserServiceTest.Create_ShouldCreateUser_WhenEmailIsUnique&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::5B666C5A-45DA-4B4A-A4FB-F9B0C46C6931::net9.0::TestProject1.Services.Tests.BussinessLogic_Services_UserServiceTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::5B666C5A-45DA-4B4A-A4FB-F9B0C46C6931::net9.0::TestProject1.Services.Tests.BussinessLogic_Services_RoomServiceTest.GetAll_ShouldReturnAllRooms&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7d21d9ad_002Ddd9a_002D4a0a_002D9ed9_002D908f3b9e69c7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Lab1_6.Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests" Presentation="&amp;lt;Lab1_6.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=83d7f23b_002D2352_002D4dec_002D9056_002Dc79789ea8792/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Lab1_6.Tests&amp;gt; #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests" Presentation="&amp;lt;Lab1_6.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ad7b3b53_002Dea41_002D4bde_002D81aa_002D1655720dddaa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Lab1_6.Tests&amp;gt; #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests" Presentation="&amp;lt;Lab1_6.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=df9b7317_002D7a7a_002D4244_002Dbbbc_002D396a89d1b1d7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from BussinessLogic_Services_UserServiceTest.cs #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;14ACC8C8-9368-47C3-A358-336E96682E96/d:Services.Tests/f:BussinessLogic_Services_UserServiceTest.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fd75c93e_002D3e20_002D4910_002D8e9b_002Dba3d212452f4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Lab1_6.Tests&amp;gt; #8" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests" Presentation="&amp;lt;Lab1_6.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe47929b_002De279_002D48e3_002Db226_002De47d58f156d8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Lab1_6.Tests&amp;gt; #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests" Presentation="&amp;lt;Lab1_6.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
