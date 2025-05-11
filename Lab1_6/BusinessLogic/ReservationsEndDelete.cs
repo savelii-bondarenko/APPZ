@@ -1,18 +1,15 @@
 using Lab1_6.DataAccess.Interfaces;
-using Lab1_6.Models.Entity;
 
 namespace Lab1_6.BusinessLogic;
-
-public class ReservationsEndDeleteService(IUnitOfWork unitOfWork) : IHostedService
+public class ReservationsEndDeleteService(IServiceScopeFactory serviceScopeFactory) 
+    : IHostedService
 {
     private Timer _timer;
     const int CheckIntervalTime = 10;
 
     public Task StartAsync(CancellationToken cancellationToken)
     {
-        _timer = new Timer(PerformTask, null, TimeSpan.Zero, 
-            TimeSpan.FromMinutes(CheckIntervalTime));
-
+        _timer = new Timer(PerformTask, null, TimeSpan.Zero, TimeSpan.FromMinutes(CheckIntervalTime));
         return Task.CompletedTask;
     }
 
@@ -24,25 +21,21 @@ public class ReservationsEndDeleteService(IUnitOfWork unitOfWork) : IHostedServi
 
     private void PerformTask(object state)
     {
-        Check();
+        using var scope = serviceScopeFactory.CreateScope();
+        var unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
+        Check(unitOfWork);
     }
 
-    private void Delete(Reservation reservation)
-    {
-        unitOfWork.Reservations.Delete(reservation);
-        unitOfWork.SaveChanges();
-    }
-
-    private void Check()
+    private void Check(IUnitOfWork unitOfWork)
     {
         var allReservations = unitOfWork.Reservations.GetAll();
-
         foreach (var reservation in allReservations)
         {
             if (reservation.EndDate <= DateTime.Now)
             {
-                Delete(reservation);
+                unitOfWork.Reservations.Delete(reservation);
             }
         }
+        unitOfWork.SaveChanges();
     }
 }

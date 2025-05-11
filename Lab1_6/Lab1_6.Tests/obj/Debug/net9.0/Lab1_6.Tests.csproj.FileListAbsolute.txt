@@ -9,7 +9,6 @@ C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\ne
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\Lab1_6.Tests.csproj.nuget.dgspec.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\project.assets.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\project.packagespec.json
-C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\TestProject1.csproj.nuget.dgspec.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.staticwebassets.runtime.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.staticwebassets.endpoints.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.exe
@@ -52,8 +51,6 @@ C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\ne
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Moq.dll
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Newtonsoft.Json.dll
-C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Ninject.dll
-C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Ninject.Web.Common.dll
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\NSubstitute.dll
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\SQLitePCLRaw.core.dll
@@ -151,8 +148,6 @@ C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\ne
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.pdb
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\obj\Debug\net9.0\Lab1_6.Tests.csproj.AssemblyReference.cache
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\obj\Debug\net9.0\Lab1_6.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\obj\Debug\net9.0\Lab1_6.Tests.AssemblyInfoInputs.cache
-C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\obj\Debug\net9.0\Lab1_6.Tests.AssemblyInfo.cs
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\obj\Debug\net9.0\Lab1_6.Tests.csproj.CoreCompileInputs.cache
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\obj\Debug\net9.0\Lab1_6.Tests.sourcelink.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\obj\Debug\net9.0\Lab1_6.T.467C53F0.Up2Date
@@ -172,5 +167,4 @@ C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\ne
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\Lab1_6.Tests.csproj.nuget.dgspec.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\project.assets.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\project.packagespec.json
-C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\TestProject1.csproj.nuget.dgspec.json
 C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\Lab1_6.Tests\bin\Debug\net9.0\Lab1_6.Tests\obj\Debug\net9.0\Lab1_6.Tests.sourcelink.json

@@ -96,10 +96,6 @@
               "target": "Package",
               "version": "[5.3.0, )"
             },
-            "Ninject.Web.Common": {
-              "target": "Package",
-              "version": "[3.3.2, )"
-            },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"

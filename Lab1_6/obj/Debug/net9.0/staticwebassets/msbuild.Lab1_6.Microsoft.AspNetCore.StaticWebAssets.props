@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pyaid4y08j</Fingerprint>
-      <Integrity>AeX41OoFBkESHURwyxxYcY9O47QM5JQAp3VaFnAUHs0=</Integrity>
+      <Fingerprint>lf5ns145md</Fingerprint>
+      <Integrity>v8S5XpWJmVqcEL13WCRKslf+UlWmbYT0sgybeB+fCnw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\form-data-validation.js'))</OriginalItemSpec>

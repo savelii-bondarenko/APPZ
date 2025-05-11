@@ -6,11 +6,10 @@ using NSubstitute;
 public class BussinessLogic_Services_RoomServiceTest
 {
     private readonly IUnitOfWork _unitOfWork = Substitute.For<IUnitOfWork>();
-    private readonly Fixture _fixture;
+    private readonly Fixture _fixture = new Fixture();
 
     public BussinessLogic_Services_RoomServiceTest()
     {
-        _fixture = new Fixture();
         _fixture.Behaviors
             .OfType<ThrowingRecursionBehavior>()
             .ToList()
