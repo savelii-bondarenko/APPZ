@@ -3,19 +3,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('reservation-form');
 
     if (!form) {
-        console.error('Форма не найдена!');
+        console.error('Form error');
         return;
     }
 
     form.addEventListener('submit', function (event) {
-        console.log("Срабатывает submit!");
-
         let startInput = document.getElementById("StartDate").value;
         let endInput = document.getElementById("EndDate").value;
 
         let startDate = new Date(startInput);
         let endDate = new Date(endInput);
         let now = new Date();
+
+        let allBookDate = endDate.getTime() - startDate.getTime();  
         now.setSeconds(0, 0);
 
         if (!startDate.getTime() || !endDate.getTime()) {
@@ -35,6 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (startDate >= endDate) {
             showError("Start date must be earlier than end date.", event);
+            return false;
+        }
+
+        if (allBookDate < 3600000) {
+            showError("Reservation must be at least 1 hour.", event);
             return false;
         }
     });

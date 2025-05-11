@@ -26,10 +26,9 @@ builder.Services.AddScoped<IRepository<Room>, RoomRepository>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ReservationService>();
 builder.Services.AddScoped<RoomService>();
-
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
-builder.Services.AddHostedService<ReservationCleanupService>();
+builder.Services.AddHostedService<ReservationsEndDeleteService>();
 
 builder.Services.AddControllersWithViews()
     .AddRazorOptions(options =>
