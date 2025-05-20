@@ -18,30 +18,35 @@ public class UserService(IPasswordHasher<User> passwordHasher, IUnitOfWork unitO
 
     public void Update(User entity)
     {
-        if (!IsExists(entity.Email))
+        var existingUser = unitOfWork.Users.GetByCondition(u => u.Id == entity.Id);
+        if (existingUser == null)
         {
-            throw new Exception($"Email {entity.Email} isn't exists");
+            throw new Exception($"User with ID {entity.Id} does not exist");
         }
 
+        existingUser.Email = entity.Email;
         if (!string.IsNullOrEmpty(entity.Password))
         {
-            entity.Password = passwordHasher.HashPassword(entity, entity.Password);
+            existingUser.Password = passwordHasher.HashPassword(existingUser, entity.Password);
         }
 
-        unitOfWork.Users.Update(entity);
+        unitOfWork.Users.Update(existingUser);
         unitOfWork.SaveChanges();
     }
+
 
     public void Delete(User entity)
     {
-        if (!IsExists(entity.Email))
+        var existingUser = unitOfWork.Users.GetByCondition(u => u.Id == entity.Id);
+        if (existingUser == null)
         {
-            throw new Exception($"Email {entity.Email} isn't exists");
+            throw new Exception($"User with ID {entity.Id} does not exist");
         }
 
-        unitOfWork.Users.Delete(entity);
+        unitOfWork.Users.Delete(existingUser);
         unitOfWork.SaveChanges();
     }
+
 
     public bool IsExists(string email)
     {
