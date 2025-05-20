@@ -17,73 +17,73 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab1_6
 build_property.RootNamespace = Lab1_6
-build_property.ProjectDir = C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6\
+build_property.ProjectDir = /Users/saveliibondarenko/Documents/APPZ/Lab1_6/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\savab\OneDrive\Документы\APPZ\Lab1_6
+build_property.MSBuildProjectDirectory = /Users/saveliibondarenko/Documents/APPZ/Lab1_6
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Account/Index.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvQWNjb3VudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Home/Index.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Login/Index.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvTG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Register/Index.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvUmVnaXN0ZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Reservation/Create.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Reservation/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcUmVzZXJ2YXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvUmVzZXJ2YXRpb24vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Room/Index.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Room/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcUm9vbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvUm9vbS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Shared/Error.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Shared/_Layout.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/savab/OneDrive/Документы/APPZ/Lab1_6/UI/Views/_ViewImports.cshtml]
+[/Users/saveliibondarenko/Documents/APPZ/Lab1_6/UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = VUlcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.TargetPath = VUkvVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
