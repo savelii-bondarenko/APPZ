@@ -19,6 +19,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<RoomService>();
 
 
 builder.Services.AddControllers();

@@ -26,7 +26,6 @@
                 <td>@room.Price.ToString("C")</td>
                 <td>@(room.IsAvailable ? "Available" : "Booked")</td>
 
-                <!-- Display current reservations -->
                 <td>
                     @if (room.Reservations != null && room.Reservations.Any())
                     {
