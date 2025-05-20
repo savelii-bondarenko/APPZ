@@ -1,4 +1,5 @@
 using Lab1_6.BusinessLogic.Services;
+using Lab1_6.Models.DTOs;
 using Lab1_6.Models.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -29,10 +30,18 @@ public class RoomsController(RoomService roomService) : ControllerBase
 
     [HttpPut]
     [SwaggerOperation(Summary = "Оновити кімнату", Description = "Оновлює інформацію про кімнату")]
-    public IActionResult Update(Room room)
+    public IActionResult Update(RoomUpdateDto roomDto)
     {
         try
         {
+            var room = new Room
+            {
+                Id = roomDto.Id,
+                Category = roomDto.Category,
+                Price = roomDto.Price,
+                IsAvailable = roomDto.IsAvailable
+            };
+
             roomService.Update(room);
             return Ok("Кімнату оновлено.");
         }
